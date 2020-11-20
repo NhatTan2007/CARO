@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>[Thực hành] Tạo bàn cờ caro đơn giản</title>
+      <style>
+            td{
+                  cursor: pointer;
+            }
+      </style>
+</head>
+<body>
+
+      <div style="width: 70%;">
+            <table style="border-collapse:collapse; margin: 0 auto;">
+                  <tbody id="mainCaro">
+      
+                  </tbody>
+            </table>
+            <div style="width: 100%; text-align: center;">
+                  <label>Hãy chọn người đi trước</label>
+                  <input type="radio" name="playerFirst" id="player1">
+                  <label id="player1Name"></label>
+                  <input type="radio" name="playerFirst" id="player2">
+                  <label id="player2Name"></label>
+                  <button id="btnPlay" style="width: 80px; height: 50px; margin-top: 10px;" onclick='addEventBtnPlay(document.getElementById("btnPlay").innerHTML)'>Play game</button>
+            </div>
+      </div>
+
+      <script src="caroscript.js"></script>
+</body>
+</html>
